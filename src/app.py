@@ -50,7 +50,7 @@ def delete_favorite(position):
     if (position < 0):
         return "La posicion no puede ser menor a cero", 404    
     todos.pop(users.favorites.people.id)
-    return jsonify (todos)
+    return jsonify (users.favorites)
 
 
 if __name__ == "__main__":
